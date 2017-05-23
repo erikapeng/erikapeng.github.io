@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Xinyi's Portfolio</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+
+</head>
+<body>
+<a name="top"></a>
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+<!-- Navigation section  -->
+
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+
+          <div class="navbar-header">
+              <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="icon icon-bar"></span>
+                  <span class="icon icon-bar"></span>
+                  <span class="icon icon-bar"></span>
+              </button>
+              <a href="index.html" class="navbar-brand"><i class="fa fa-magnet"></i></a>
+          </div>
+          <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="index.html">Projects</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="about.html">My story</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </div>
+
+     </div>
+</div>
+
+
+<!-- Single Project Section -->
+
+<section id="single-project">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                   
+                    <h1>路灯扫描定位</h1>
+                    </br>
+                    <p>信息与交互设计课程项目：用于工人将定位新的路灯定位到SCCS城市照明智控云系统，进行基于物联网的智能管理</p>
+
+                    <div class="col-md-12 col-sm-12" align="center" >
+                         <img src="images/portfolio-img-2.jpg" class="img-responsive" alt="Portfolio">
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <h3>职责</h3>
+                         <p>UI设计</p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <h3>时间</h3>
+                         <p>2017.3-2017.4</p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <h3>工具</h3>
+                         <p>Sketch</p>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 text-left">
+                        <h2><font color="#009587">系统概述</font></h2></br>
+                        <p> 由浙江方大智控科技有限公司开发的SCCS城市照明智控管理系统是基于物联网技术的云平台，是智慧城市建设的重要组成部分。可对集成各种技术创新的智慧灯杆（包括智慧照明、环境信息采集、应急可视报警等）进行云管理，达到高效管理和节能减排的目的。</p>
+                        <p>对路灯的控制是由项目—集中控制器—单灯控制器的三级结构组成，按照区域分为不同的项目，项目下按照道路分为几个集中控制器，分别控制该道路下的单灯控制器。</p>
+                    </div>
+
+                
+ 
+                     <div class="col-md-12 col-sm-12 text-left">
+                        <h2><font color="#009587">需求定义</font></h2></br>
+
+                        <p>需求方要求为路灯工人设计一个帮助他们在安装新路灯时进行路灯信息录入的轻量级APP。每个新的路灯上会有含有路灯信息的二维码，路灯工人安装好路灯后，使用该APP扫描二维码，借助手机的GPS定位将新的路灯定位到云平台上，并上传二维码所含有的灯杆信息和现场照片。
+                        </p>
+
+                     </div>
+                     
+                     <div class="col-md-12 col-sm-12 text-left">
+                        <h2><font color="#009587">功能分析</font></h2>
+                        <p>核心功能为对路灯进行扫描定位，只在特定的场景（安装好路灯后对路灯上的二维码进行扫描定位）时使用，因此不需要多余的其他功能（如to-do list）。所以尽量精简界面的交互，将这个APP定位于一个快速解决问题的小工具。核心流程为：安装路灯——选择添加终端或集中器——扫码——信息确认——拍照——上传信息。
+                        </p>
+                        <p>考虑到工人在特殊的环境（比如高速公路的某些区段）下没有网络的状况，设置了离线登陆的功能，在没有网络连接的情况下先把信息保存下来，在登陆后提醒用户上传数据。
+                        </p>
+                        </div>
+                     
+                
+                     
+                     
+                     
+                      <div class="col-md-6 col-sm-6 text-left">
+                        <h2><font color="#009587">原型</font></h2>
+                          <h3>*主界面</h3>
+                          <p></br></p>
+                         <img src="images/proto2/proto2-1.jpg" class="img-responsive" alt="Portfolio" >
+                      </div>
+                      
+                      
+                      <div class="col-md-6 col-sm-6 text-left">
+                           <p></br></br></br></br></br></br></br></br></br>主界面为直接的地图显示，轻点右下角的加号可以直接选择录入信息的种类并进入信息上传流程，避免过多的流程造成的负担。</p>
+                      </div>
+                      
+                      <div class="col-md-12 col-sm-12 text-left">
+                          <h3>*信息录入流程</h3>
+                          <p></br></p>
+                          <img src="images/proto2/proto2-5.jpg" class="img-responsive" alt="Portfolio" >
+                          <p></br>选择输入信息种类后即可扫码，扫码后信息会以小窗口的形式在地图上显示，并可选择是否重新扫描。确认信息后即可对路灯进行拍照。对照片进行确认后即进行上传流程，以进度条的形式显示在界面上方。每上传完成一个即以橙色高亮显示2秒提示完成。</p>
+                       </div>
+                      
+                      <div class="col-md-12 col-sm-12 text-left">
+                          <h3>*抽屉</h3>
+                          <p></br></p>
+                          <div class="col-md-6 col-sm-6 text-left">
+                              <p></br></br></br></br></br></br>左上角的抽屉中含有用户信息和一些附加功能。设置了离线登录功能以便于用户在没有连接时使用。左图示正常登录，右图示离线登录。</br></br></br></p>
+                          </div>
+                          
+                          <div class="col-md-6 col-sm-6 text-left">
+                              <img src="images/proto2/proto2-2.jpg" class="img-responsive" alt="Portfolio" >
+                          </div>
+                      </div>
+            
+            
+                      <div class="col-md-12 col-sm-12 text-left">
+                          <h3>*历史记录+项目总览</h3>
+                          <p></br></p>
+                          <img src="images/proto2/proto2-3.jpg" class="img-responsive" alt="Portfolio">
+                              <p></br><strong>历史记录</strong>-用于查看历史和上传离线数据；<strong>项目总览</strong>—用于定位项目、控制柜和灯杆。</p>
+                      </div>
+                      
+                      
+                      <div class="col-md-12 col-sm-12 text-left">
+                          <h3>*已录入信息查看</h3>
+                          <p></br></p>
+                              <img src="images/proto2/proto2-4.jpg" class="img-responsive" alt="Portfolio" >
+                          <p></br>在信息已录入后可以选中控制柜或灯杆所代表的icon，点击此时出现的“i”的icon，即可查看信息。发现信息错误时可以重新进入扫描流程。
+                          </p>
+                      </div>
+                      
+
+                        
+
+                    </div>
+               </div>
+
+          </div>
+     <div class="col-md-12 col-sm-12 text-center">
+         <h4><a href="#top">点这里就带你飞回顶部哦！</a></h4>
+     </div>
+     </div>
+</section>
+
+<!-- Footer Section -->
+
+<footer>
+     <div class="container">
+          <div class="row">
+              
+              <div class="col-md-3 col-sm-3">
+                  <i class="fa fa-magnet"></i>
+              </div>
+              
+              <div class="col-md-4 col-sm-4">
+                  <p><a name="contact">有任何问题和建议，非常欢迎联系我：） </a></p>
+              </div>
+              
+              <div class="col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-3">
+                  <p>邮件： <a href="mailto:yingningic@163.com">yingningic@163.com</a></p>
+              </div>
+              
+              <div class="clearfix col-md-12 col-sm-12">
+                  <hr>
+              </div>
+              
+          </div>
+     </div>
+</footer>
+
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
