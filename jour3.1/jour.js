@@ -46,6 +46,7 @@
     .attr('transform','translate('+margin.left+','+margin.top+')');
   var rect = [];
 
+
     d3.json('pretty_journal_year_remove.json',function(err,data){
 
     data = data.data;
@@ -61,11 +62,9 @@
     yearOffset = yearExtent[0];
 
 
-
-
- 	//bind click event
+  //bind click event
     d3.selectAll('[role="calibration"] [name="displayType"]').on('click',function(){
-    		for (var i = 0; i < data.length; i++){
+        for (var i = 0; i < data.length; i++){
     jdata = data[i].value;  
     jdata.forEach(function(valueObj){   
       paValueExtent[i] = d3.extent(jdata,function(d){
@@ -113,11 +112,11 @@
 
     journum = i;
     
-    rect.filter(function(d){ return d.value[i].num>0;})
-      .append('title')
-      .text(function(d){
-        return d.value[i].year+' '+d.value[i].num;
-      });
+    // rect.filter(function(d){ return d.value[i].num>0;})
+    //   .append('title')
+    //   .text(function(d){
+    //     return d.value[i].year+' '+d.value[i].num;
+    //   });
 
     
     axisHeight = itemSize * journum;
@@ -129,7 +128,7 @@
       .attr('class','x axis')
       .call(xAxis)
     .append('text')
-      .text('time');
+      //.text('time')
       .attr('transform','translate('+axisWidth+',-10)');
 
     yAxis.scale(yAxisScale.range([0,axisHeight]).domain([1,journum])); 
